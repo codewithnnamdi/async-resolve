@@ -1,5 +1,6 @@
 # async-resolve
-Async Resolve is a utility method for resolving a module in object form after a set amount of time.
+Async Resolve is a utility method for resolving a module in object 
+form after a set amount of time.
 
 ## Installation
 ```bash
