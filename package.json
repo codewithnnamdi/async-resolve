@@ -1,5 +1,5 @@
 {
-  "name": "async-resolve",
+  "name": "async.resolve",
   "version": "0.0.1",
   "description": "Asyncronosly resolve a module",
   "main": "index.js",
