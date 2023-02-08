@@ -1,0 +1,22 @@
+{
+  "name": "async-resolve",
+  "version": "0.0.1",
+  "description": "Asyncronosly resolve a module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithnnamdi/async-resolve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewithnnamdi/async-resolve/issues"
+  },
+  "homepage": "https://github.com/codewithnnamdi/async-resolve#readme"
+}
