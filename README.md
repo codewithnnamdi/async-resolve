@@ -1,6 +1,5 @@
 # async-resolve
-Async Resolve is a utility method for resolving a promise with a value or a promise.
-after a set amount of time.
+Async Resolve is a utility method for resolving a module in object form after a set amount of time.
 
 ## Installation
 ```bash
@@ -25,10 +24,38 @@ var module ={
 }
 
 module.asyncMethod().then(function(result){
-  console.log(result);
+  console.log(result); // { foo: 'bar' }
 });
+
 ```
+### Options
+#### time
+Type: `Number`
+Default value: `1000`
+
+The time in milliseconds to wait before resolving the promise.
+
+### interpolate
+Type: `Boolean`
+Default value: `false`
+
+If set to true, the value will be interpolated with the module object.
 
 ```javascript
+var module ={
+  asyncMethod: function(){
+    return asyncResolve({
+        foo: 'bar',
+        __esModule: true
+        }, 1000, true);
+  }
+}
+
+module.asyncMethod().then(function(result){
+  console.log(result); 
+    // { foo: 'bar', __esModule: true,
+    // default: { foo: 'bar', __esModule: true }
+})
+
 
 ```
